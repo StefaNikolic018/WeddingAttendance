@@ -3,26 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind HTML Page</title>
+    <title>Владана и Јован Вас позивају на свадбу</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./style/index.css" /> -->
   </head>
   <body class="bg-white flex flex-col justify-start items-center h-screen">
     <div class="container max-w-2xl relative">
       <div class="w-full">
         <img
-          src="./assets/prvapolovina.jpg"
+          src="./assets/images/prvapolovina.jpg"
           alt="Prva polovina"
           class="w-full"
         />
       </div>
       <div class="mt-4 text-center">
-        <!-- <label class="block mt-2 text-center font-bold text-gray-800"
-          >Ко долази на свадбу?</label
-        > -->
         <!-- https://chepurnov-serge.medium.com/make-a-web-application-using-only-javascript-and-google-spreadsheets-c6ac062c9960 -->
         <!-- https://qr.io/?gclid=Cj0KCQjwoeemBhCfARIsADR2QCvU_ppJrdtX2vocxqvkaTaUDi9vgI84xLxfBMIUF07PVl_KWXrdckgaAub6EALw_wcB -->
         <div
-          class="flex flex-row w-full justify-center items-center gap-5 font-bold text-zinc-600 mb-2"
+          class="flex flex-row w-full justify-center items-center gap-5 text-zinc-600 mb-2"
         >
           <div class="flex items-center">
             <input
@@ -49,23 +47,30 @@
         <input
           type="text"
           placeholder="Унесите име"
-          class="w-80 px-2 sm:px-4 py-1 sm:py-2 border-2 border-gray-300 rounded-md focus:ring focus:ring-gray-300"
+          class="w-80 px-2 sm:px-4 py-1 sm:py-2 border-2 border-gray-300 rounded-md focus:ring focus:ring-gray-300 shadow-md"
         />
         <button
-          class="mt-2 w-80 px-2 sm:px-4 py-1 sm:py-2 bg-gray-600 text-white rounded-md transition-all duration-100 hover:bg-gray-500"
+          class="mt-2 w-80 px-2 sm:px-4 py-1 sm:py-2 bg-gray-600 text-white rounded-md transition-all hover:bg-gray-500 hover:shadow-md transition-all duration-100"
         >
           Потврди
         </button>
       </div>
-      <!-- <div class="mt-4 w-full">
+      <!-- START: SA DRUGIM DELOM SLIKE -->
+      <div class="mt-4 w-full">
         <img
-          src="./assets/drugapolovina.jpg"
+          src="./assets/images/drugapolovina.jpg"
           alt="Druga polovina"
           class="w-full"
         />
-      </div> -->
-      <!--<div class="absolute sm:bottom-[12%] mt-10 sm:mt-0 flex flex-col justify-center items-center w-full sm:w-auto sm:right-[10%]"> -->
-      <div class="w-full flex flex-col justify-center mt-5 items-center">
+      </div>
+      <div
+        class="absolute sm:bottom-[12%] mt-10 sm:mt-0 flex flex-col justify-center items-center w-full sm:w-auto sm:right-[10%]"
+      >
+        <!-- END: SA DRUGIM DELOM SLIKE -->
+        <!-- START: BEZ DRUGOG DELA SLIKE -->
+        <!-- <div class="w-full flex flex-col justify-center mt-5 items-center"> -->
+        <!-- END: BEZ DRUGOG DELA SLIKE -->
+
         <p class="text-zinc-700 font-bold">ЛОКАЦИЈА:</p>
         <div class="flex flex-row">
           <a
@@ -75,9 +80,9 @@
             class="flex flex-col justify-center items-center text-zinc-400 tracking-w font-bold"
           >
             <img
-              src="./assets/qrcode_crkva.png"
+              src="./assets/images/qrcode_crkva.png"
               alt="QR Code Crkva"
-              class="w-24 h-24 inline-block mr-2 shadow-lg"
+              class="w-24 h-24 inline-block mr-2 shadow-lg hover:shadow-xl transition-all duration-100"
             />
             <p>ЦРКВА</p>
           </a>
@@ -88,14 +93,22 @@
             class="flex flex-col justify-center items-center text-zinc-400 tracking-w font-bold"
           >
             <img
-              src="./assets/qrcode_dolina.png"
+              src="./assets/images/qrcode_dolina.png"
               alt="QR Code Dolina"
-              class="w-24 h-24 inline-block shadow-lg"
+              class="w-24 h-24 inline-block shadow-lg hover:shadow-xl transition-all duration-100"
             />
             <p>ДОЛИНА</p>
           </a>
         </div>
       </div>
     </div>
+    <!-- <script src="js/app.js"></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script> -->
   </body>
 </html>
