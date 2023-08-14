@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind HTML Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white flex flex-col justify-start items-center h-screen">
+    <div class="container max-w-2xl relative">
+      <div class="w-full">
+        <img
+          src="./assets/prvapolovina.jpg"
+          alt="Prva polovina"
+          class="w-full"
+        />
+      </div>
+      <div class="mt-4 text-center">
+        <!-- <label class="block mt-2 text-center font-bold text-gray-800"
+          >Ко долази на свадбу?</label
+        > -->
+        <!-- https://chepurnov-serge.medium.com/make-a-web-application-using-only-javascript-and-google-spreadsheets-c6ac062c9960 -->
+        <!-- https://qr.io/?gclid=Cj0KCQjwoeemBhCfARIsADR2QCvU_ppJrdtX2vocxqvkaTaUDi9vgI84xLxfBMIUF07PVl_KWXrdckgaAub6EALw_wcB -->
+        <div
+          class="flex flex-row w-full justify-center items-center gap-5 font-bold text-zinc-600 mb-2"
+        >
+          <div class="flex items-center">
+            <input
+              type="radio"
+              id="option1"
+              name="attendance"
+              class="form-radio h-4 w-4 text-blue-500"
+              value="ДОЛАЗИ"
+              checked
+            />
+            <label for="option1" class="ml-2">ДОЛАЗИ</label>
+          </div>
+          <div class="flex items-center ml-4">
+            <input
+              type="radio"
+              id="option2"
+              name="attendance"
+              class="form-radio h-4 w-4 text-blue-500"
+              value="НЕ ДОЛАЗИ"
+            />
+            <label for="option2" class="ml-2">НЕ ДОЛАЗИ</label>
+          </div>
+        </div>
+        <input
+          type="text"
+          placeholder="Унесите име"
+          class="w-80 px-2 sm:px-4 py-1 sm:py-2 border-2 border-gray-300 rounded-md focus:ring focus:ring-gray-300"
+        />
+        <button
+          class="mt-2 w-80 px-2 sm:px-4 py-1 sm:py-2 bg-gray-600 text-white rounded-md transition-all duration-100 hover:bg-gray-500"
+        >
+          Потврди
+        </button>
+      </div>
+      <div class="mt-4 w-full">
+        <img
+          src="./assets/drugapolovina.jpg"
+          alt="Druga polovina"
+          class="w-full"
+        />
+      </div>
+      <div
+        class="absolute sm:bottom-[12%] mt-10 sm:mt-0 flex flex-col items-center w-full sm:w-auto sm:right-[10%]"
+      >
+        <p class="text-zinc-700 font-bold">ЛОКАЦИЈА:</p>
+        <div class="flex flex-row">
+          <a
+            href="https://www.google.com/maps/place/%D0%A6%D1%80%D0%BA%D0%B2%D0%B0+%D0%92%D0%B0%D1%81%D0%BA%D1%80%D1%81%D0%B5%D1%9A%D0%B0+%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B3+(%D0%A5%D0%B8%D0%BB%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B8+%D0%BC%D0%B5%D1%82%D0%BE%D1%85+%D1%83+%D0%9D%D0%B8%D1%88%D1%83)/@43.3038441,21.9244087,15z/data=!4m6!3m5!1s0x4755b1aed8f10995:0x1b41093e1815423d!8m2!3d43.3038441!4d21.9244087!16s%2Fg%2F11fq_qw04x?entry=ttu"
+            target="_blank"
+            rel="noopener"
+            class="flex flex-col justify-center items-center text-zinc-400 tracking-w font-bold"
+          >
+            <img
+              src="./assets/qrcode_crkva.png"
+              alt="QR Code Crkva"
+              class="w-24 h-24 inline-block mr-2 shadow-lg"
+            />
+            <p>ЦРКВА</p>
+          </a>
+          <a
+            href="https://www.google.com/maps/dir//Gorana+Markovica+Kareta+50,+Ni%C5%A1+18000/@43.3230613,21.9422069,14.66z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4755b112826a8b8f:0x696304b6969943ca!2m2!1d21.9563776!2d43.3199921?entry=ttu"
+            target="_blank"
+            rel="noopener"
+            class="flex flex-col justify-center items-center text-zinc-400 tracking-w font-bold"
+          >
+            <img
+              src="./assets/qrcode_dolina.png"
+              alt="QR Code Dolina"
+              class="w-24 h-24 inline-block shadow-lg"
+            />
+            <p>ДОЛИНА</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
